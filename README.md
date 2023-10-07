@@ -1,1 +1,1 @@
-https://github.com/zincbayz/posmotri_v_okno.git
+https://github.com/zincbayz/posmotri_v_okno
