@@ -74,15 +74,17 @@ ol {
 }
 
 .result__video-container {
-  max-width: 711px;
-  max-height: 386px;
-  margin-block-end: 16px;
+  position: relative;
+  width: 711px;
+  height: 386px;
+  
 }
 
 .result__video {
   display: block;
-  max-width: 100%;
-  max-height: 100%;
+  width: 711px;
+  height: 386px;
+  object-fit: fill;
 }
 
 .search-form {
@@ -91,6 +93,7 @@ ol {
   align-items: flex-start;
   gap: 40px;
   font-family: inherit;
+  margin-block-start: 16px;
 }
 
 .search-form__fieldset {
@@ -251,6 +254,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 }
 
 .content__list {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
