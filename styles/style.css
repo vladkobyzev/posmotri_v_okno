@@ -27,6 +27,7 @@ html {
   block-size: 100%;
   -webkit-box-align: center;
   -ms-flex-align: center;
+  appearance: none;
 }
 
 h1,
@@ -77,14 +78,14 @@ ol {
   position: relative;
   width: 711px;
   height: 386px;
-  
 }
 
 .result__video {
   display: block;
   width: 711px;
   height: 386px;
-  object-fit: fill;
+  object-fit: cover;
+  object-position: top right;
 }
 
 .search-form {
@@ -93,7 +94,6 @@ ol {
   align-items: flex-start;
   gap: 40px;
   font-family: inherit;
-  margin-block-start: 16px;
 }
 
 .search-form__fieldset {
@@ -110,6 +110,7 @@ ol {
 
 .search-form__fieldset-title {
   color: #fff;
+  font-family: Fira Sans Condensed;
   font-size: inherit;
 }
 
@@ -117,6 +118,7 @@ ol {
   display: inline-flex;
   justify-self: start;
   align-items: center;
+  cursor: pointer;
 }
 
 .search-form__label:focus {
@@ -139,13 +141,11 @@ ol {
   border-bottom: 1px solid #fff;
   padding-inline: 0;
   color: rgba(255, 255, 255, 0.7);
+  font-family: Fira Sans Condensed;
   font-family: inherit;
   font-weight: 400;
   font-size: inherit;
   background-color: transparent;
-}
-
-.search-form__textfield:hover {
 }
 
 .search-form__textfield:active {
@@ -157,7 +157,17 @@ ol {
 }
 
 .search-form__textfield:focus-visible {
-  border: 1px solid #fff;
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.search-form__checkbox:focus {
+  outline: none;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .search-form__checkbox-list {
@@ -171,10 +181,10 @@ ol {
   height: 19px;
   margin-right: 5px;
   border: 1px solid #fff;
+  padding: 1px;
   vertical-align: middle;
   background-color: transparent;
   background-clip: content-box;
-  padding: 1px;
 }
 
 input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
@@ -186,6 +196,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 }
 
 .search-form__label-text:hover {
+  font-family: Fira Sans Condensed;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -198,6 +209,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   gap: 10px;
   width: 194px;
   height: 34px;
+  border: 1px solid #fff;
   padding: 0px;
   color: #fff;
   font-family: Fira Sans Condensed;
@@ -207,6 +219,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   line-height: normal;
   text-align: center;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .search-form__submit-button {
@@ -226,7 +239,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   background-color: #545050;
 }
 
-.search-form__submit-button-text:hover {
+.search-form__submit-button:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -236,6 +249,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   flex-direction: column;
   align-items: flex-start;
   gap: 26px;
+  margin-block-end: -2px;
 }
 
 .title {
@@ -260,10 +274,26 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   align-items: flex-start;
   gap: 30px;
   height: 298px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
+
 .more-button {
   width: 394px;
+  margin: 0 2px 2px 2px;
+}
+
+.more-button:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.more-button:focus {
+  outline: none;
+}
+
+.more-button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .content__card-link {
@@ -274,7 +304,11 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   outline: none;
 }
 
-.content__card-link:focus-visible {
+.content__list-item:focus {
+  outline: none;
+}
+
+.content__list-item:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: -1px;
 }
@@ -291,9 +325,10 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   background-color: #545050;
 }
 
-.content__video-card-description-container:hover {
+.content__card-link:hover {
   text-decoration: underline;
   text-decoration-color: #fff;
+  text-decoration-thickness: 1px;
   text-decoration-skip-ink: none;
   text-underline-offset: 3px;
 }
@@ -321,4 +356,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
+  object-fit: cover;
+  object-position: top right;
 }
