@@ -101,7 +101,7 @@ ol {
   align-items: flex-start;
   gap: 5px;
   border: none;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: normal;
@@ -109,7 +109,7 @@ ol {
 
 .search-form__fieldset-title {
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: inherit;
 }
 
@@ -140,8 +140,7 @@ ol {
   border-bottom: 1px solid #fff;
   padding-inline: 0;
   color: rgba(255, 255, 255, 0.7);
-  font-family: Fira Sans Condensed;
-  font-family: inherit;
+  font-family: Fira Sans Condensed, sans-serif;
   font-weight: 400;
   font-size: inherit;
   background-color: transparent;
@@ -195,7 +194,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 }
 
 .search-form__label-text:hover {
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -211,7 +210,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   border: 1px solid #fff;
   padding: 0px;
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
@@ -244,7 +243,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 }
 
 .search-form__submit-button-text {
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
 }
 
 .content__details {
@@ -258,7 +257,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 .title {
   display: block;
   color: #fff;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
   font-style: normal;
@@ -287,7 +286,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 .more-button {
   width: 394px;
   margin: 0 2px 2px 2px;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
 }
 
 .more-button:hover {
@@ -344,7 +343,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 .content__video-card-title {
   margin-block-end: 8px;
   color: #fff;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 30px;
   font-style: normal;
@@ -354,7 +353,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 
 .content__video-card-description {
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
